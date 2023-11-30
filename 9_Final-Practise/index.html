@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<style>
+    body {
+        background-color: #2f2f2f;
+        color: white;
+    }
+</style>
+
+<body>
+    <form action="response.php" method="post" onsubmit="return formValidation()">
+        <div>
+            <label for="name">Enter Name</label>
+            <input type="text" name="name" id="name">
+        </div>
+
+        <div>
+            <label for="email">Enter Email</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        <div>
+            <label for="password">Enter password</label>
+            <input type="password" name="password" id="password" required>
+        </div>
+
+        <div>
+            <label for="age">Enter Age</label>
+            <input type="text" name="age" id="age" required>
+        </div>
+
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

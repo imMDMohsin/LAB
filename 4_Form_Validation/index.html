@@ -1,0 +1,68 @@
+<!--! Form Validation  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="response.php" method="POST" class="form" onsubmit="return validateForm()">
+        <div class="container">
+            <h1>Register Now</h1>
+            <div class="name input" name="name">
+                <p>Enter Your Name/ID</p>
+                <input type="text" placeholder="Full Name" class="name-input" id="name-input" name="name" required>
+            </div>
+
+            <div class="input">
+                <p>Enter Your Password</p>
+                <input type="password" placeholder="Enter Password" id="password-input" name="pass" required>
+            </div>
+
+            <div class="age input">
+                <p>Enter Your Age</p>
+                <input type="text" placeholder="Your Age" id="age-input" name="age" required>
+            </div>
+
+            <!-- <div class="dob">
+                <p>Choose Your DOB</p>
+                <input type="date" id="dob-input">
+            </div> -->
+
+            <div class="gender">
+                <p>Select Your Gender</p>
+                <div class="radio">
+                    <p>Male</p>
+                    <input type="radio" name="gen" id="male" value="male">
+                    <p>Female</p>
+                    <input type="radio" name="gen" id="female" value="female">
+                </div>
+            </div>
+
+            <div class="country">
+                <p>Select Your Country</p>
+                <select name="country">
+                    <option value="India">India</option>
+                    <option value="USA">USA</option>
+                    <option value="China">China</option>
+                </select>
+            </div>
+
+            <div class="tc">
+                <p>Agree Terms & Condition</p>
+                <input type="checkbox" required>
+            </div>
+
+            <div class="btn">
+                <input type="submit" value="Submit The Response">
+                <!-- <input type="reset"> -->
+            </div>
+        </div>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

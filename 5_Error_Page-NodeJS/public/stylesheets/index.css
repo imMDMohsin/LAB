@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+::selection {
+    background-color: skyblue;
+}
+
+body {
+    background-image: url("https://images.unsplash.com/photo-1495476479092-6ece1898a101?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.form-box {
+    position: relative;
+    width: 400px;
+    height: 450px;
+    border: 1px solid rgb(209, 209, 209);
+    border-radius: 8px;
+    box-shadow: 5px 5px 5px 5px rgb(53, 53, 53);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(2px);
+}
+
+h2 {
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+.input-box {
+    position: relative;
+    margin: 30px 0;
+    width: 320px;
+    border-bottom: 2px solid white;
+    caret-color: white;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    pointer-events: none;
+    transition: 0.3s ease-in-out;
+}
+
+input:focus~label {
+    top: -5px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 0 35px 0 5px;
+}
+
+.input-box i {
+    position: absolute;
+    right: 5px;
+    top: 15px;
+    font-size: 1.2rem;
+}
+
+.forgot {
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.forgot label {
+    margin-right: 20px;
+}
+
+.forgot a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.forgot a:hover {
+    text-decoration: underline;
+}
+
+.login-btn {
+    width: 100%;
+    height: 40px;
+    border: none;
+    font-size: 1.2rem;
+    background-color: transparent;
+    border: 1px solid rgb(214, 214, 214);
+    border-radius: 8px;
+    color: white;
+    transition: 0.3s ease-in-out;
+    margin: 10px 0 20px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.login-btn:hover {
+    background-color: skyblue;
+    border: none;
+}
+
+.register {
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.register p a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.register a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --accent-color: #00b7ff;
+}
+
+::selection {
+    background-color: var(--accent-color);
+    color: white;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: #dff5ff;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: #474747;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 15%;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+nav {
+    height: 80px;
+    width: 100%;
+    background-color: var(--accent-color);
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+th {
+    background-color: var(--accent-color);
+}
+
+table {
+    box-shadow: 3px 3px 3px 3px #5c5c5c;
+    border: 1px solid grey;
+    border-radius: 8px;
+}
+
+th,
+td {
+    width: 150px;
+    height: 30px;
+    border: 1px solid #a8a8a8;
+}
+
+td:hover {
+    background-color: var(--accent-color);
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
